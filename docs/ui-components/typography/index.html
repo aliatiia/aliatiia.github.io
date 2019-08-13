@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   
-    <title>Home - Ali Atiia</title>
+    <title>Typography - Ali Atiia</title>
 
-    
-    <meta name="Description" content="This will become a meta html tag">
     
   
 
@@ -27,17 +25,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Home | Ali Atiia</title>
+<title>Typography | Ali Atiia</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="Typography" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This will become a meta html tag" />
-<meta property="og:description" content="This will become a meta html tag" />
-<link rel="canonical" href="http://cs.mcgill.ca/~malsha17//z-sandbox/" />
-<meta property="og:url" content="http://cs.mcgill.ca/~malsha17//z-sandbox/" />
+<meta name="description" content="A Jekyll theme for documentation" />
+<meta property="og:description" content="A Jekyll theme for documentation" />
+<link rel="canonical" href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/typography/" />
+<meta property="og:url" content="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/typography/" />
 <meta property="og:site_name" content="Ali Atiia" />
 <script type="application/ld+json">
-{"name":"Ali Atiia","description":"This will become a meta html tag","@type":"WebSite","url":"http://cs.mcgill.ca/~malsha17//z-sandbox/","headline":"Home","@context":"https://schema.org"}</script>
+{"description":"A Jekyll theme for documentation","@type":"WebPage","url":"http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/typography/","headline":"Typography","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -57,9 +55,9 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
-            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/" class="navigation-list-link active">Home</a>
+            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/" class="navigation-list-link">Home</a>
             
           </li>
         
@@ -101,7 +99,7 @@
     
       
         
-          <li class="navigation-list-item">
+          <li class="navigation-list-item active">
             
             <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components" class="navigation-list-link">UI Components</a>
             
@@ -115,9 +113,9 @@
                   
                 
                   
-                    <li class="navigation-list-item ">
+                    <li class="navigation-list-item  active">
                       
-                      <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/typography/" class="navigation-list-link">Typography</a>
+                      <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/typography/" class="navigation-list-link active">Typography</a>
                       
                     </li>
                   
@@ -352,21 +350,159 @@
       </div>
       <div class="main-content">
         
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components">UI Components</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Typography</span></li>
+              </ol>
+            </nav>
+          
+        
         <div id="main-content" class="page-content" role="main">
-          <h1 class="fs-9" id="header">Header</h1>
+          <h1 class="no_toc" id="typography">Typography</h1>
 
-<p class="fs-6 fw-300">Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.</p>
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
 
-<p><a href="#getting-started" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">Button 1</a> <a href="https://github.com/pmarsceill/just-the-docs" class="btn fs-5 mb-4 mb-md-0">Button 2</a></p>
+<ol id="markdown-toc">
+  <li><a href="#font-stack" id="markdown-toc-font-stack">Font stack</a></li>
+  <li><a href="#responsive-type-scale" id="markdown-toc-responsive-type-scale">Responsive type scale</a></li>
+  <li><a href="#headings" id="markdown-toc-headings">Headings</a></li>
+  <li><a href="#body-text" id="markdown-toc-body-text">Body text</a></li>
+  <li><a href="#inline-elements" id="markdown-toc-inline-elements">Inline elements</a></li>
+  <li><a href="#typographic-utilities" id="markdown-toc-typographic-utilities">Typographic Utilities</a></li>
+</ol>
 
 <hr />
 
-<h2 id="smaller-header">Smaller Header</h2>
+<h2 id="font-stack">Font stack</h2>
 
-<h3 id="dependencies">Dependencies</h3>
+<p>By default, Just the Docs uses a native system font stack for sans-serif fonts:</p>
 
-<p>Just the Docs is built for <a href="https://jekyllrb.com">Jekyll</a>, a static site generator. View the <a href="https://jekyllrb.com/docs/">quick start guide</a> for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages’ standard Jekyll compiler.</p>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">-apple-system</span><span class="o">,</span> <span class="nt">BlinkMacSystemFont</span><span class="o">,</span> <span class="s2">"helvetica neue"</span><span class="o">,</span> <span class="nt">helvetica</span><span class="o">,</span> <span class="nt">roboto</span><span class="o">,</span> <span class="nt">noto</span><span class="o">,</span> <span class="s2">"segoe ui"</span><span class="o">,</span> <span class="nt">arial</span><span class="o">,</span> <span class="nt">sans-serif</span>
+</code></pre></div></div>
 
+<p class="fs-5 ls-10 code-example">ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz</p>
+
+<p>For monospace type, like code snippets or the <code class="highlighter-rouge">&lt;pre&gt;</code> element, Just the Docs uses a native system font stack for monospace fonts:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"SFMono-Regular"</span><span class="o">,</span> <span class="nt">Menlo</span><span class="o">,</span> <span class="nt">Consolas</span><span class="o">,</span> <span class="nt">Monospace</span>
+</code></pre></div></div>
+
+<p class="fs-5 ls-10 text-mono code-example">ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz</p>
+
+<hr />
+
+<h2 id="responsive-type-scale">Responsive type scale</h2>
+
+<p>Just the Docs uses a responsive type scale that shifts depending on the viewport size.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Selector</th>
+      <th style="text-align: left">Small screen size <code class="highlighter-rouge">font-size</code></th>
+      <th style="text-align: left">Large screen size <code class="highlighter-rouge">font-size</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">h1</code>, <code class="highlighter-rouge">.text-alpha</code></td>
+      <td style="text-align: left">32px</td>
+      <td style="text-align: left">36px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">h2</code>, <code class="highlighter-rouge">.text-beta</code></td>
+      <td style="text-align: left">18px</td>
+      <td style="text-align: left">24px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">h3</code>, <code class="highlighter-rouge">.text-gamma</code></td>
+      <td style="text-align: left">16px</td>
+      <td style="text-align: left">18px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">h4</code>, <code class="highlighter-rouge">.text-delta</code></td>
+      <td style="text-align: left">14px</td>
+      <td style="text-align: left">16px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">h5</code>, <code class="highlighter-rouge">.text-epsilon</code></td>
+      <td style="text-align: left">16px</td>
+      <td style="text-align: left">18px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">h6</code>, <code class="highlighter-rouge">.text-zeta</code></td>
+      <td style="text-align: left">18px</td>
+      <td style="text-align: left">24px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">body</code></td>
+      <td style="text-align: left">14px</td>
+      <td style="text-align: left">16px</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="headings">Headings</h2>
+
+<p>Headings are rendered like this:</p>
+
+<div class="code-example">
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Heading 1</span>
+<span class="gu">## Heading 2</span>
+<span class="gu">### Heading 3</span>
+<span class="gu">#### Heading 4</span>
+<span class="gu">##### Heading 5</span>
+<span class="gu">###### Heading 6</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="body-text">Body text</h2>
+
+<p>Default body text is rendered like this:</p>
+
+<div class="code-example">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="inline-elements">Inline elements</h2>
+
+<div class="code-example">
+  <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+
+  <p><a href="another-page">Link to another page</a>.</p>
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Text can be <span class="gs">**bold**</span>, _italic_, or ~~strikethrough~~.
+
+<span class="p">[</span><span class="nv">Link to another page</span><span class="p">](</span><span class="sx">another-page</span><span class="p">)</span>.
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="typographic-utilities">Typographic Utilities</h2>
+
+<p>There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization.</p>
+
+<p><a href="/z-sandbox//docs/utilities#typography" class="btn btn-outline">View typography utilities</a></p>
 
 
           

@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   
-    <title>Home - Ali Atiia</title>
+    <title>Code - Ali Atiia</title>
 
-    
-    <meta name="Description" content="This will become a meta html tag">
     
   
 
@@ -27,17 +25,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Home | Ali Atiia</title>
+<title>Code | Ali Atiia</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="Code" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This will become a meta html tag" />
-<meta property="og:description" content="This will become a meta html tag" />
-<link rel="canonical" href="http://cs.mcgill.ca/~malsha17//z-sandbox/" />
-<meta property="og:url" content="http://cs.mcgill.ca/~malsha17//z-sandbox/" />
+<meta name="description" content="A Jekyll theme for documentation" />
+<meta property="og:description" content="A Jekyll theme for documentation" />
+<link rel="canonical" href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/code/" />
+<meta property="og:url" content="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/code/" />
 <meta property="og:site_name" content="Ali Atiia" />
 <script type="application/ld+json">
-{"name":"Ali Atiia","description":"This will become a meta html tag","@type":"WebSite","url":"http://cs.mcgill.ca/~malsha17//z-sandbox/","headline":"Home","@context":"https://schema.org"}</script>
+{"description":"A Jekyll theme for documentation","@type":"WebPage","url":"http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/code/","headline":"Code","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -57,9 +55,9 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
-            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/" class="navigation-list-link active">Home</a>
+            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/" class="navigation-list-link">Home</a>
             
           </li>
         
@@ -101,7 +99,7 @@
     
       
         
-          <li class="navigation-list-item">
+          <li class="navigation-list-item active">
             
             <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components" class="navigation-list-link">UI Components</a>
             
@@ -169,9 +167,9 @@
                   
                 
                   
-                    <li class="navigation-list-item ">
+                    <li class="navigation-list-item  active">
                       
-                      <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/code/" class="navigation-list-link">Code</a>
+                      <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/code/" class="navigation-list-link active">Code</a>
                       
                     </li>
                   
@@ -352,20 +350,89 @@
       </div>
       <div class="main-content">
         
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components">UI Components</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Code</span></li>
+              </ol>
+            </nav>
+          
+        
         <div id="main-content" class="page-content" role="main">
-          <h1 class="fs-9" id="header">Header</h1>
+          <h1 class="no_toc" id="code">Code</h1>
 
-<p class="fs-6 fw-300">Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.</p>
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
 
-<p><a href="#getting-started" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">Button 1</a> <a href="https://github.com/pmarsceill/just-the-docs" class="btn fs-5 mb-4 mb-md-0">Button 2</a></p>
+<ol id="markdown-toc">
+  <li><a href="#inline-code" id="markdown-toc-inline-code">Inline code</a></li>
+  <li><a href="#syntax-highlighted-code-blocks" id="markdown-toc-syntax-highlighted-code-blocks">Syntax highlighted code blocks</a></li>
+  <li><a href="#code-blocks-with-rendered-examples" id="markdown-toc-code-blocks-with-rendered-examples">Code blocks with rendered examples</a></li>
+</ol>
 
 <hr />
 
-<h2 id="smaller-header">Smaller Header</h2>
+<h2 id="inline-code">Inline code</h2>
 
-<h3 id="dependencies">Dependencies</h3>
+<p>Code can be rendered inline by wrapping it in single back ticks.</p>
 
-<p>Just the Docs is built for <a href="https://jekyllrb.com">Jekyll</a>, a static site generator. View the <a href="https://jekyllrb.com/docs/">quick start guide</a> for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages’ standard Jekyll compiler.</p>
+<div class="code-example">
+  <p>Lorem ipsum dolor sit amet, <code class="highlighter-rouge">&lt;inline code snippet&gt;</code> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Lorem ipsum dolor sit amet, <span class="sb">`&lt;inline code snippet&gt;`</span> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="syntax-highlighted-code-blocks">Syntax highlighted code blocks</h2>
+
+<p>Use Jekyll’s built-in syntax highlighting with Rouge for code blocks by using three backticks, followed by the language name:</p>
+
+<div class="code-example">
+  <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
+<span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./lang/</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
+  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">```</span><span class="nl">js
+</span><span class="c1">// Javascript code with syntax highlighting.</span>
+<span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./lang/</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
+  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">```</span></code></pre></figure>
+
+<hr />
+
+<h2 id="code-blocks-with-rendered-examples">Code blocks with rendered examples</h2>
+
+<p>To demonstrate front end code, sometimes it’s useful to show a rendered example of that code. After including the styles from your project that you’ll need to show the rendering, you can use a <code class="highlighter-rouge">&lt;div&gt;</code> with the <code class="highlighter-rouge">code-example</code> class, followed by the code block syntax. If you want to render your output with Markdown instead of HTML, use the <code class="highlighter-rouge">markdown="1"</code> attribute to tell Jekyll that the code you are rendering will be in Markdown format… This is about to get meta…</p>
+
+<div class="code-example">
+
+  <div class="code-example">
+
+    <p><a href="http://example.com/" class="btn">Link button</a></p>
+
+  </div>
+  <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn }
+</code></pre></div>  </div>
+
+</div>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"code-example"</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+
+<span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn }
+
+<span class="nt">&lt;/div&gt;</span>
+<span class="p">```</span><span class="nl">markdown
+</span><span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn }
+<span class="p">```</span></code></pre></figure>
 
 
 

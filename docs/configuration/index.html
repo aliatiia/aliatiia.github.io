@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   
-    <title>Home - Ali Atiia</title>
+    <title>Configuration - Ali Atiia</title>
 
-    
-    <meta name="Description" content="This will become a meta html tag">
     
   
 
@@ -27,17 +25,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Home | Ali Atiia</title>
+<title>Configuration | Ali Atiia</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="Configuration" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This will become a meta html tag" />
-<meta property="og:description" content="This will become a meta html tag" />
-<link rel="canonical" href="http://cs.mcgill.ca/~malsha17//z-sandbox/" />
-<meta property="og:url" content="http://cs.mcgill.ca/~malsha17//z-sandbox/" />
+<meta name="description" content="A Jekyll theme for documentation" />
+<meta property="og:description" content="A Jekyll theme for documentation" />
+<link rel="canonical" href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/configuration/" />
+<meta property="og:url" content="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/configuration/" />
 <meta property="og:site_name" content="Ali Atiia" />
 <script type="application/ld+json">
-{"name":"Ali Atiia","description":"This will become a meta html tag","@type":"WebSite","url":"http://cs.mcgill.ca/~malsha17//z-sandbox/","headline":"Home","@context":"https://schema.org"}</script>
+{"description":"A Jekyll theme for documentation","@type":"WebPage","url":"http://cs.mcgill.ca/~malsha17//z-sandbox/docs/configuration/","headline":"Configuration","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -57,9 +55,9 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
-            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/" class="navigation-list-link active">Home</a>
+            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/" class="navigation-list-link">Home</a>
             
           </li>
         
@@ -79,9 +77,9 @@
     
       
         
-          <li class="navigation-list-item">
+          <li class="navigation-list-item active">
             
-            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/configuration/" class="navigation-list-link">Configuration</a>
+            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/configuration/" class="navigation-list-link active">Configuration</a>
             
           </li>
         
@@ -352,21 +350,70 @@
       </div>
       <div class="main-content">
         
+          
+        
         <div id="main-content" class="page-content" role="main">
-          <h1 class="fs-9" id="header">Header</h1>
+          <h1 class="no_toc" id="configuration">Configuration</h1>
 
-<p class="fs-6 fw-300">Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.</p>
+<p class="fs-6 fw-300">Just the Docs has some specific configuration parameters that can be defined in your Jekyll site’s _config.yml file.</p>
 
-<p><a href="#getting-started" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">Button 1</a> <a href="https://github.com/pmarsceill/just-the-docs" class="btn fs-5 mb-4 mb-md-0">Button 2</a></p>
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#search-enabled" id="markdown-toc-search-enabled">Search enabled</a></li>
+  <li><a href="#aux-links" id="markdown-toc-aux-links">Aux links</a></li>
+  <li><a href="#color-scheme" id="markdown-toc-color-scheme">Color scheme</a></li>
+  <li><a href="#google-analytics" id="markdown-toc-google-analytics">Google Analytics</a></li>
+</ol>
 
 <hr />
 
-<h2 id="smaller-header">Smaller Header</h2>
+<p>View this site’s <a href="https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml">_config.yml</a> file as an example.</p>
 
-<h3 id="dependencies">Dependencies</h3>
+<h2 id="search-enabled">Search enabled</h2>
 
-<p>Just the Docs is built for <a href="https://jekyllrb.com">Jekyll</a>, a static site generator. View the <a href="https://jekyllrb.com/docs/">quick start guide</a> for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages’ standard Jekyll compiler.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Enable or disable the site search</span>
+<span class="na">search_enabled</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
 
+<h2 id="aux-links">Aux links</h2>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Aux links for the upper right navigation</span>
+<span class="na">aux_links</span><span class="pi">:</span>
+    <span class="s2">"</span><span class="s">Just</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Docs</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">GitHub"</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">//github.com/pmarsceill/just-the-docs"</span>
+</code></pre></div></div>
+
+<h2 id="color-scheme">Color scheme</h2>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Color scheme currently only supports "dark" or nil (default)</span>
+<span class="na">color_scheme</span><span class="pi">:</span> <span class="s2">"</span><span class="s">dark"</span>
+</code></pre></div></div>
+<p><button class="btn js-toggle-dark-mode">Preview dark color scheme</button></p>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode')
+const cssFile = document.querySelector('[rel="stylesheet"]')
+const originalCssRef = cssFile.getAttribute('href')
+const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
+
+addEvent(toggleDarkMode, 'click', function(){
+  if (cssFile.getAttribute('href') === originalCssRef) {
+    cssFile.setAttribute('href', darkModeCssRef)
+  } else {
+    cssFile.setAttribute('href', originalCssRef)
+  }
+})
+</script>
+
+<p>See <a href="/z-sandbox//docs/customization/">Customization</a> for more information.</p>
+
+<h2 id="google-analytics">Google Analytics</h2>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Google Analytics Tracking (optional)</span>
+<span class="c1"># e.g, UA-1234567-89</span>
+<span class="na">ga_tracking</span><span class="pi">:</span> <span class="s">UA-5555555-55</span>
+</code></pre></div></div>
 
 
           

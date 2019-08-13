@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   
-    <title>Home - Ali Atiia</title>
+    <title>Customization - Ali Atiia</title>
 
-    
-    <meta name="Description" content="This will become a meta html tag">
     
   
 
@@ -27,17 +25,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Home | Ali Atiia</title>
+<title>Customization | Ali Atiia</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="Customization" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This will become a meta html tag" />
-<meta property="og:description" content="This will become a meta html tag" />
-<link rel="canonical" href="http://cs.mcgill.ca/~malsha17//z-sandbox/" />
-<meta property="og:url" content="http://cs.mcgill.ca/~malsha17//z-sandbox/" />
+<meta name="description" content="A Jekyll theme for documentation" />
+<meta property="og:description" content="A Jekyll theme for documentation" />
+<link rel="canonical" href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/customization/" />
+<meta property="og:url" content="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/customization/" />
 <meta property="og:site_name" content="Ali Atiia" />
 <script type="application/ld+json">
-{"name":"Ali Atiia","description":"This will become a meta html tag","@type":"WebSite","url":"http://cs.mcgill.ca/~malsha17//z-sandbox/","headline":"Home","@context":"https://schema.org"}</script>
+{"description":"A Jekyll theme for documentation","@type":"WebPage","url":"http://cs.mcgill.ca/~malsha17//z-sandbox/docs/customization/","headline":"Customization","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -57,9 +55,9 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
-            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/" class="navigation-list-link active">Home</a>
+            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/" class="navigation-list-link">Home</a>
             
           </li>
         
@@ -293,9 +291,9 @@
     
       
         
-          <li class="navigation-list-item">
+          <li class="navigation-list-item active">
             
-            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/customization/" class="navigation-list-link">Customization</a>
+            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/customization/" class="navigation-list-link active">Customization</a>
             
           </li>
         
@@ -352,21 +350,70 @@
       </div>
       <div class="main-content">
         
+          
+        
         <div id="main-content" class="page-content" role="main">
-          <h1 class="fs-9" id="header">Header</h1>
+          <h1 class="no_toc" id="customization">Customization</h1>
 
-<p class="fs-6 fw-300">Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.</p>
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
 
-<p><a href="#getting-started" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">Button 1</a> <a href="https://github.com/pmarsceill/just-the-docs" class="btn fs-5 mb-4 mb-md-0">Button 2</a></p>
+<ol id="markdown-toc">
+  <li><a href="#color-schemes" id="markdown-toc-color-schemes">Color schemes</a></li>
+  <li><a href="#specific-visual-customization" id="markdown-toc-specific-visual-customization">Specific visual customization</a></li>
+</ol>
 
 <hr />
 
-<h2 id="smaller-header">Smaller Header</h2>
+<h2 class="d-inline-block" id="color-schemes">Color schemes</h2>
 
-<h3 id="dependencies">Dependencies</h3>
+<p class="label label-green">New</p>
 
-<p>Just the Docs is built for <a href="https://jekyllrb.com">Jekyll</a>, a static site generator. View the <a href="https://jekyllrb.com/docs/">quick start guide</a> for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages’ standard Jekyll compiler.</p>
+<p>Just the Docs supports two color schemes: light (default), and dark.</p>
 
+<p>To enable a color scheme, set the <code class="highlighter-rouge">color_scheme</code> parameter in your site’s <code class="highlighter-rouge">_config.yml</code> file:</p>
+
+<h4 class="no_toc" id="example">Example</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Color scheme currently only supports "dark" or nil (default)</span>
+<span class="na">color_scheme</span><span class="pi">:</span> <span class="s2">"</span><span class="s">dark"</span>
+</code></pre></div></div>
+<p><button class="btn js-toggle-dark-mode">Preview dark color scheme</button></p>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode')
+const cssFile = document.querySelector('[rel="stylesheet"]')
+const originalCssRef = cssFile.getAttribute('href')
+const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
+
+addEvent(toggleDarkMode, 'click', function(){
+  if (cssFile.getAttribute('href') === originalCssRef) {
+    cssFile.setAttribute('href', darkModeCssRef)
+  } else {
+    cssFile.setAttribute('href', originalCssRef)
+  }
+})
+</script>
+
+<h2 id="specific-visual-customization">Specific visual customization</h2>
+
+<p>To customize your site’s aesthetic, open <code class="highlighter-rouge">_sass/custom/custom.scss</code> in your editor to see if there is a variable that you can override. Most styles like fonts, colors, spacing, etc. are derived from these variables. To override a specific variable, uncomment its line and change its value.</p>
+
+<p>For example, to change the link color from the purple default to blue, open <code class="highlighter-rouge">_sass/custom/custom.css</code> and find the <code class="highlighter-rouge">$link-color</code> variable on line <code class="highlighter-rouge">50</code>. Uncomment it, and change its value to our <code class="highlighter-rouge">$blue-000</code> variable, or another shade of your choosing.</p>
+
+<h4 class="no_toc" id="example-1">Example</h4>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// ...</span>
+<span class="c1">//</span>
+<span class="c1">// $body-text-color: $grey-dk-100;</span>
+<span class="c1">// $body-heading-color: $grey-dk-300;</span>
+<span class="nv">$link-color</span><span class="p">:</span> <span class="nv">$blue-000</span><span class="p">;</span>
+<span class="c1">//</span>
+<span class="c1">// ...</span>
+</code></pre></div></div>
+
+<p><em>Note:</em> Editing the variables directly in <code class="highlighter-rouge">_sass/support/variables.scss</code> is not recommended and can cause other dependencies to fail.</p>
+
+<hr />
 
 
           

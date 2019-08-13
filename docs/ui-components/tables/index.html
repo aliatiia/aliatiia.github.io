@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   
-    <title>Home - Ali Atiia</title>
+    <title>Tables - Ali Atiia</title>
 
-    
-    <meta name="Description" content="This will become a meta html tag">
     
   
 
@@ -27,17 +25,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Home | Ali Atiia</title>
+<title>Tables | Ali Atiia</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="Tables" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This will become a meta html tag" />
-<meta property="og:description" content="This will become a meta html tag" />
-<link rel="canonical" href="http://cs.mcgill.ca/~malsha17//z-sandbox/" />
-<meta property="og:url" content="http://cs.mcgill.ca/~malsha17//z-sandbox/" />
+<meta name="description" content="A Jekyll theme for documentation" />
+<meta property="og:description" content="A Jekyll theme for documentation" />
+<link rel="canonical" href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/tables/" />
+<meta property="og:url" content="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/tables/" />
 <meta property="og:site_name" content="Ali Atiia" />
 <script type="application/ld+json">
-{"name":"Ali Atiia","description":"This will become a meta html tag","@type":"WebSite","url":"http://cs.mcgill.ca/~malsha17//z-sandbox/","headline":"Home","@context":"https://schema.org"}</script>
+{"description":"A Jekyll theme for documentation","@type":"WebPage","url":"http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/tables/","headline":"Tables","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -57,9 +55,9 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
-            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/" class="navigation-list-link active">Home</a>
+            <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/" class="navigation-list-link">Home</a>
             
           </li>
         
@@ -101,7 +99,7 @@
     
       
         
-          <li class="navigation-list-item">
+          <li class="navigation-list-item active">
             
             <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components" class="navigation-list-link">UI Components</a>
             
@@ -147,9 +145,9 @@
                   
                 
                   
-                    <li class="navigation-list-item ">
+                    <li class="navigation-list-item  active">
                       
-                      <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/tables/" class="navigation-list-link">Tables</a>
+                      <a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components/tables/" class="navigation-list-link active">Tables</a>
                       
                     </li>
                   
@@ -352,21 +350,64 @@
       </div>
       <div class="main-content">
         
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://cs.mcgill.ca/~malsha17//z-sandbox/docs/ui-components">UI Components</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Tables</span></li>
+              </ol>
+            </nav>
+          
+        
         <div id="main-content" class="page-content" role="main">
-          <h1 class="fs-9" id="header">Header</h1>
+          <h1 id="tables">Tables</h1>
 
-<p class="fs-6 fw-300">Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.</p>
+<p>Tables are responsive by default, allowing wide tables to have a horizontal scroll to access columns outside of the normal viewport.</p>
 
-<p><a href="#getting-started" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">Button 1</a> <a href="https://github.com/pmarsceill/just-the-docs" class="btn fs-5 mb-4 mb-md-0">Button 2</a></p>
+<div class="code-example">
 
-<hr />
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: left">head1</th>
+        <th style="text-align: left">head two</th>
+        <th style="text-align: left">three</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">ok</td>
+        <td style="text-align: left">good swedish fish</td>
+        <td style="text-align: left">nice</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">out of stock</td>
+        <td style="text-align: left">good and plenty</td>
+        <td style="text-align: left">nice</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">ok</td>
+        <td style="text-align: left">good <code class="highlighter-rouge">oreos</code></td>
+        <td style="text-align: left">hmm</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">ok</td>
+        <td style="text-align: left">good <code class="highlighter-rouge">zoute</code> drop</td>
+        <td style="text-align: left">yumm</td>
+      </tr>
+    </tbody>
+  </table>
 
-<h2 id="smaller-header">Smaller Header</h2>
-
-<h3 id="dependencies">Dependencies</h3>
-
-<p>Just the Docs is built for <a href="https://jekyllrb.com">Jekyll</a>, a static site generator. View the <a href="https://jekyllrb.com/docs/">quick start guide</a> for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages’ standard Jekyll compiler.</p>
-
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good <span class="sb">`oreos`</span>      | hmm   |
+| ok           | good <span class="sb">`zoute`</span> drop | yumm  |
+</code></pre></div></div>
 
 
           
