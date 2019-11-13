@@ -43,7 +43,7 @@
   },
   "8": {
     "title": "KenanDB",
-    "content": "KenanDB is a curated repository of biological network data sets in various organisms and physiological contexts that meet the following criteria: . All interactions have been identified experimentally (e.g. Y2H assays for PPIs). | All interactions are direct and physical. | If a significance score is available, only interactions with strong evidence are included. | . . (Feedback and/or contribution PRs are welcome) . . Go to Repository . .",
+    "content": "KenanDB is a curated repository of biological network datasets in various organisms and physiological contexts that meet the following criteria: . All interactions have been identified experimentally (e.g. Y2H assays for PPIs). | All interactions are direct and physical. | If a significance score is available, only interactions with strong evidence are included. | . . (Feedback and/or contribution PRs are welcome) . . Go to Repository . .",
     "url": "https://aliatiia.github.io/research/kenan-db/",
     "relUrl": "/research/kenan-db/"
   },
