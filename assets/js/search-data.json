@@ -1,0 +1,111 @@
+{
+  "1": {
+    "title": "Computational Intractability Generates the Topology of Biological Networks",
+    "content": "← Back . .",
+    "url": "https://aliatiia.github.io/talks/ACM-2017/",
+    "relUrl": "/talks/ACM-2017/"
+  },
+  "2": {
+    "title": "Molecular Computing & The Foundation of Mathematics",
+    "content": "← Back . .",
+    "url": "https://aliatiia.github.io/talks/IRIC-2014/",
+    "relUrl": "/talks/IRIC-2014/"
+  },
+  "3": {
+    "title": "Resilience in Biological Networks",
+    "content": "← Back . .",
+    "url": "https://aliatiia.github.io/talks/Kobe-2016/",
+    "relUrl": "/talks/Kobe-2016/"
+  },
+  "4": {
+    "title": "DNA Outside The Cell",
+    "content": "← Back . .",
+    "url": "https://aliatiia.github.io/talks/McGill-2012/",
+    "relUrl": "/talks/McGill-2012/"
+  },
+  "5": {
+    "title": "Biology And The Computability/Complexity Law",
+    "content": "← Back . .",
+    "url": "https://aliatiia.github.io/talks/NII-2016/",
+    "relUrl": "/talks/NII-2016/"
+  },
+  "6": {
+    "title": "About",
+    "content": "My academic research is in a theoretical part at the intersection of computational complexity and systems biology, and in an experimental part part in the area of DNA nanotech and molecular computing. . My blockchain R&amp;D is primarily focused on auto-pilot self-sustaining public financial utilities particularly on Ethereum. I publish articles and threads in that domain for the general audience, covering smart contracts, DeFi and layer-2 scaling solutions like rollups. . . The theoretical component of my research relates the computational complexity law to the evolution of topological properties in biological networks. The experimental component involves in-vitro methods in the areas of DNA/RNA computing and nanotechnology. . . The evolution of topology in biological networks | Cells come under evolutionary pressure to alter what, when and whether some genes should be expressed at a given moment in their life cycle. A gene can be assigned benefit/damage scores denoting the degree to which its expression provides (dis)advantage to the organism under said pressure. A gene may therefore be an asset (benefit &gt; 0 and damage = 0), a liability (b = 0, d &gt; 0), or both (b &gt; 0, d &gt; 0). What subset of genes should be deleted/mutated, and which should be conserved, such that the total number of damaging interactions is minimized to a tolerable threshold? This optimization question can be defined formally, and the difficulty of answering it seems to directly depend on the topology of biological networks Read more .. | . The idea of using the resilient, ancient, and fine-tuned DNA (deoxyribonucleic acid) for material purposes has attracted researchers for decades. Amazing 2D and 3D nano-structures have been demonstrated. DNA as an immobilization (2D) or containerization (3D) substrate has many exciting potential use cases. Can such structures be produced at an industrial-grade throughput and with acceptable cost-to-yield ratio? &nbsp;&nbsp;Read more .. | Programmable fabrication of DNA nano-structures | . . .",
+    "url": "https://aliatiia.github.io/about",
+    "relUrl": "/about"
+  },
+  "7": {
+    "title": "Blogging",
+    "content": "I write regularly on Twitter and on Substack . The Investment Thesis of a Blockchain Developer | 17/04/2020 | . Gourmet Crypto: Technical Blockchain Insights in Plain English | 13/04/2020 | . Consuming Blockchain: The Weakest-link Methodology | 05/04/2020 | . .",
+    "url": "https://aliatiia.github.io/blog/",
+    "relUrl": "/blog/"
+  },
+  "8": {
+    "title": "Dry lab",
+    "content": "Overview: . Nobel laureate and biologist Sydney Brenner commented: . Biological research is in crisis, and in Alan Turing’s work there is much to guide us. Technology gives us the tools to analyze organisms at all scales, but we are drowning in a sea of data and thirsting for some theoretical framework with which to understand it. . Out of the ~7000 known rare diseases, only ~6% have existing therapies. It has increasingly become clear that underlying causalities in complex disease has more to do with the interaction of genes rather than one isolated problem in this or that gene. The aim of computational systems biology is to provide a holistic view of biological systems that could address this obstacle. . The overarching goal of my research is to establish sufficient and necessary conditions for observed systems properties and, more importantly, formulate falsifiable hypotheses as to how to “debug” systems aberrations (most notably cancer). . Evolution by Computational Selection: . We can represent biological networks as graphs: the nodes are genes, and edges are interactions. An interaction from gene g1 to g2 can be promotional or inhibitory in nature, denoted on this example graph (right) by arrow- or bar-terminated directed edges, respectively. Suppose we are given infallible information from an Oracle that says: g2 and g3 should be promoted, g3 and g7 should be inhibited. We can encode the Oracle opinion as string A as seen on the right. We use &quot;0&quot; to indicate that the Oracle has no opinion on a given gene (note: the Oracle&#39;s opinion on g_x is denoted by a_x). The Oracle&#39;s opinion simulates evolutionary pressure: it is vital for the organism that this gene should be promoted or inhibited. | nodes = genes edges = interactions | . The adjacency matrix M on the right encodes exactly the same information as the graph above: entry in row i column j is non-zero if there exists an interaction between gene i and gene j. The sign of such entry, + or -, indicates whether that interaction is promotional or inhibitory in nature, respectively (corresponding to arrow- or bar-terminated edges in the graph representation above, respectively). The green or red color of a matrix entry indicates whether that interaction supports or undermines the Oracle&#39;s opinion on the target gene. For example, the Oracle said gene 2 should be promoted, and gene 1 is doing exactly that (hence green +1 entry in row 1 column 2). But gene 1 is also inhibiting gene 4 which goes against what the Oracle said about g 4 (see above graph, a4 = +1), hence the red-colored entry -1 in row 1 column 4. Gene 1 is also promoting gene 7, while the Oracle said gene 7 should in fact be inhibited. | | . We score the genes based how many beneficial (green) or detrimental (red) interactions they&#39;re engaged in, whether exerting or receiving them. The benefit and damage score of gene i is the sum of green and red entries, respectively, along row and column i (see the dotted row/column 3 in the previous figure, and the dotted row 3 in the scoreboard on the right). A beneficial or detrimental interactions factors in the scores of both the source and target genes of said interaction. Given this score boards, what is the ideal evolutionary path for the organism? What gene(s) should ideally be mutated/deleted in the next generations and which should be conserved as is, such that the total number of damaging interactions network-wide is kept to some tolerable threshold? This is the core optimization question that we study, we refer to it as the network evolution problem (NEP). Particularly, we ask: have the topological features of biological networks emerged in order to effectively minimize the computational cost of finding acceptably optimal solutions to this problem? | | . What is the evolutionary cost of finding acceptable solutions to NEP? How many generations of random-variation non-random selection (RVnRS) would it take before just the right set of genes have been mutated advantageously, moving the network away from a deleterious and into and advantageous state (one where the total number of Oracle-contradicting damaging interactions are under a tolerable threshold)? The well-known knapsack optimization problem (KOP) is reducible to NEP and as such the latter belongs to the same computational complexity class (&quot;difficulty&quot;) as the former. More concretely, any KOP instance can be turned into a corresponding (fictional) biological network under stress, i.e. an NEP instance. The hypothetical stressed network discussed above is in fact a mirror of the KOP instance on the right figure (objects = genes, values/weights = benefits/damages). The laptop for example corresponds to gene 2. Therefore, this evolutionary optimization problem is at least as hard as the knapsack problem. KOP is in practice an easy problem to solve, and there exist fairly satisfactory approximation algorithms. That is, of course, if one is at liberty to choose an algorithm. In evolutionary context, however, the only available algorithm is RVnRS, and therefore computational difficulty of NEP must be measured against it. | | . Semantically, NEP can be interpreted in the context of regulation: what genes should ideally be promoted and which inhibited, such that the total number of damaging interactions (in light of some evolutionary pressure) is minimal to a threshold? The above hypothetical network therefore can be considered as one representing the interaction network of co-expressed genes in the cytoplasm as depicted the right figure. | | . Alternatively, and without syntactic modifications, NEP can also be interpreted as: which genes should be mutated/deleted and which conserved such that the total number of damaging interactions (in light of some evolutionary pressure) is minimal to a threshold? | | . .",
+    "url": "https://aliatiia.github.io/research/dry-lab/",
+    "relUrl": "/research/dry-lab/"
+  },
+  "9": {
+    "title": "Ethereum",
+    "content": "Ethereum: . The idea that you could wield software that summons disparate parties to autonomously congregate around an attractive/useful economic mechanism, in a rent-free (=max efficiency) and permissionless manner, is quite profound. . I discovered Ethereum relatively recently and after attending ETHWaterloo Nov 2019 I became interested in R&amp;D-ing auto-pilot (governless) and rent-free public financial utilities. I am working on a fee market proposal as well which may also lead to an Oracle-less purely ETH-backed stablecoin. . I will most likely post any new technical research in this area here. . For non-technical articles see this section. . .",
+    "url": "https://aliatiia.github.io/research/ethereum/",
+    "relUrl": "/research/ethereum/"
+  },
+  "10": {
+    "title": "Home",
+    "content": ". My academic research is in a theoretical part at the intersection of computational complexity and systems biology, and in an experimental part part in the area of DNA nanotech and molecular computing. . My blockchain R&amp;D is primarily focused on auto-pilot self-sustaining public financial utilities particularly on Ethereum. I publish articles and threads in that domain for the general audience, covering smart contracts, DeFi and layer-2 scaling solutions like rollups. . .",
+    "url": "https://aliatiia.github.io/",
+    "relUrl": "/"
+  },
+  "11": {
+    "title": "KenanDB",
+    "content": "KenanDB is a curated repository of biological network datasets in various organisms and physiological contexts that meet the following criteria: . All interactions have been identified experimentally (e.g. Y2H assays for PPIs). | All interactions are direct and physical. | If a significance score is available, only interactions with strong evidence are included. | . . (Feedback and/or contribution PRs are welcome) . . Go to Repository . .",
+    "url": "https://aliatiia.github.io/research/kenan-db/",
+    "relUrl": "/research/kenan-db/"
+  },
+  "12": {
+    "title": "Photography",
+    "content": "    . | | . | | . | | . | | . | | . | | . | | . | | . | | . | | . | | . | | . | | . .",
+    "url": "https://aliatiia.github.io/photography/",
+    "relUrl": "/photography/"
+  },
+  "13": {
+    "title": "Publications",
+    "content": "2020 . The Emergence of Component and Sign Distribution in Biological Networks Ali Atiia, In preparation (draft). . 2020 . The Computational Intractability Law Molds the Topology of Biological Networks Ali Atiia, Corbin Hopper, Katsumi Inoue, Silvia Vidal, and Jérôme Waldispühl . Applied Network Sci (ANS) (in press). . 2018 . The Computational Weight of Biological Processes Ali A Atiia, Doctoral dissertation, McGill University. . 2017 . Computational Intractability Generates the Topology of Biological Networks Ali A Atiia, Corbin Hopper, and Jérôme Waldispühl. Proceedings of the 8th ACM-BCB (pp. 500-509). . 2017 . DNA Knitting: robust and programmable fabrication of DNA nano-structures at sub-nanometer resolution Ali A Atiia. Technical report. . 2016 . KenanDB: Curated Repository of Experimentally-validated Biological Networks Ali A Atiia. Technical report. . 2016 . Single-Primer Polymerase Chain Reactions Ali A Atiia. Manuscript. . 2015 . A Molecular Algorithm Solving NP-Complete Problems by Mimicking the Cell Ali A Atiia. Technical Report. . 2011 . DNA Computation of Solutions to Edge-Matching Puzzles Ali Atiia. Master dissertation, Concordia University . .",
+    "url": "https://aliatiia.github.io/publications/",
+    "relUrl": "/publications/"
+  },
+  "14": {
+    "title": "Research",
+    "content": "Topological Properties of Biological Networks: . Understanding why and how topological properties in biological networks have emerged: . Besides the familiar “hardware” evolutionary optimizations (long necks in giraffes, optimal width and sturdy material of blood vessels, compartmentalization of sub-cellular components, and stably-folded proteins at extreme temperatures), can we identify “software” optimization in degree, component and sign distributions of biological networks? . | Can we derive sufficient and necessary conditions for the emergence of soft topological properties in biological networks? Can we generate falsifiable system-level hypotheses based on said conditions? . | To what degree and how has the law of computational complexity shaped the emergence of topological properties in biological networks? . | . Read more .. . DNA Knitting: . A programmable method for the achieving industrial-level throughput fabrication of DNA nano-sturctures: . Material (think ~ malloc): dNTPs. . | Labor (def fun{}): Polymerase, Ligase (stitch), and Kinase. . | Blueprint (argv=[p1,..pn]): DNA primers. . | . Read more .. . DNA/RNA Computing: . Characterizing the limit of PCR as a computational tool vis-à-vis the inherent intractability of NP-Complete problems. . | NP-Completeness and Cellular Regulation: can DNA/RNA based computation give us insights into the inherent difficulty of debugging gene co-expression malfunctions ? . | . Read more .. . .",
+    "url": "https://aliatiia.github.io/research/",
+    "relUrl": "/research/"
+  },
+  "15": {
+    "title": "Résumé",
+    "content": ". Curriculum Vitae: . . Download PDF . .",
+    "url": "https://aliatiia.github.io/resume/",
+    "relUrl": "/resume/"
+  },
+  "16": {
+    "title": "Software",
+    "content": ". Software: . . View on GitHub . .",
+    "url": "https://aliatiia.github.io/software/",
+    "relUrl": "/software/"
+  },
+  "17": {
+    "title": "Talks",
+    "content": "Selected invited talks: . 2017    Computational Intractability Generates the Topology of Biological Networks ACM BCB Conference, Boston USA | slides | . 2016    Biology And The Computability/Complexity Law National Institute of Informatics, Tokyo Japan | slides | . 2016    Resilience in Biological Networks Kobe University, Hyōgo-ku Japan | slides | . 2014    Molecular Computing &amp; The Foundation of Mathematics Instit. for Research in Immun. and Cancer (IRIC), Montreal Canada | slides | . 2012    DNA Outside The Cell McGill University, Montreal Canada | slides | . Full list of talks . .",
+    "url": "https://aliatiia.github.io/talks/",
+    "relUrl": "/talks/"
+  },
+  "18": {
+    "title": "Wet lab",
+    "content": "Overview: . The resilient and ancient deoxyribonucleic acid (DNA) encodes the blueprint of the machinery of life. But it has in recent decades attracted interest for material purposes. . In one avenue of research, DNA has proven to be a sturdy and, more importantly, programmable substrate with which intricate 2D and 3D nano-structures can be fabricated, with exciting potential usecases. . In another avenue, DNA has been used as a computational medium. Adleman kicked off this line of this research with an insightful demonstration of a DNA-based computation of an instance of the NP-Complete Hamiltonian Path Problem (HPP), inspiring many subsequent demonstrations. . Below is a brief about my own work in both avenues. . . DNA Knitting: . “Knitting” because the basic principle is that different nano-structures can be “knitted” (or carved out) from the same template. Other aims of this method: 1) no viral scaffolding DNA involved (hence, no regulatory and lower fabrication cost), 2) maximum resolution (a pixel = one base-pair), and 3) PCR-driven (no chemical synthesis except for primers). . | Programmability in DNA knitting method. Given a DNA lattice as template, segments (light area) of the horizontal (black) and vertical (red) DNA strands can be carved using PCR, effectively fabricating of nano-structures of interest (&quot;programmability&quot;). The choice of primer oligonucleotides (blue dots) determines the resulting nano-shape (primers ~ program arguments). Regions falling outside the range a given pair of primers are effectively “amplified-out”. &nbsp; Full report .. | . These slides provide an overview of the method, for full details see this report. The inspiration for this method originated from a DNA-based computation of an instance of the NP-complete edge-matching puzzles. . . . DNA/RNA Computing: . Subsequent to Adleman’s insightful demonstration of a DNA-based method to encode and solve an instance of the NP-complete Hamiltonian Path Problem, it was realized that, while its “bit” is extremely tiny compared those in silicon-based computers, DNA will not push the limits of what can be solved practically. . The inherent intractability of NP-Complete problems still manifests in DNA computing manifests itself by requiring an exponential molar amount of DNA strands to guarantee a successful computation, analogous to how in-silico NPC algorithms require CPU/memory resources that are exponential in problem size. To solve a 200-node HPP instance following Adleman’s method, for example, would require an amount of raw DNA that is greater than Earth in mass (Hartmanis, Juris. “On the weight of computations.” EATCS Bulletin 55 (1995): 136-138. See also p. 70, lower paragraph, in this thesis and section 1.4 in this thesis). . Nonetheless, bringing a computational perspective to a soup of interacting bio-molecules inspired many computer scientists to bring their theory into the cell (notice how this paradigm is the inverse of bioinformatics, in which the cell is “taken to the computer”). . | . A DNA/RNA/Protein-based HPP solution that mimics the functioning of the cell: left to right: dsDNA templates for each node &amp; edge in A-HPP, each template primed with leading (grey) sequence and T7 promoter (blue) sequence. T7 polymerase (blue circle) transcribes an RNA strand from each DNA template (orange lines for nodes; purple for edges), N0’s sequence is primed with m7G analog (NEB) and contains a leading ribosome-binding site (black vertical bars), N0’s transcript is polyadenylated (curvy dotted line) with E. coli poly(A) (NEB). RNA transcripts are ligated with T4 RNA ligase 2 (NEB) (orange circles) leading a brute-force exhaustive generation of correct and erroneous paths (black &amp; red subscripts, respectively). Ligated sequences beginning with N0 and ending with N6 represent mRNAs suitable for translation by the ribosome (by virtue of m7G cap &amp; RBS for translation initiation in N0, and poly(a) tail for mRNA stability in N6), but only the correct path encodes the EGFP protein (by deliberate design); since nodes’ sequences have different lengths, the correct solution’s protein has a unique kD weight; correctness of node sequence in the solution path is validated by the fluorescence of EGFP. &nbsp; Full report .. | . .",
+    "url": "https://aliatiia.github.io/research/wet-lab/",
+    "relUrl": "/research/wet-lab/"
+  }
+  
+}

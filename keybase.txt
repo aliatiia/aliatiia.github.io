@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/aliatiia
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aliatiia.github.io
+  * I am aliatiia (https://keybase.io/aliatiia) on keybase.
+  * I have a public key ASDVMArdN6_rim9Ct1jnPL6Nl3fFl-obBYsGzD54G9pkcwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d5300add37afeb8a6f42b758e73cbe8d9777c597ea1b058b06cc3e781bda64730a",
+      "host": "keybase.io",
+      "kid": "0120d5300add37afeb8a6f42b758e73cbe8d9777c597ea1b058b06cc3e781bda64730a",
+      "uid": "2bc5bd66b0e0e8c9dc250128c7ce0419",
+      "username": "aliatiia"
+    },
+    "merkle_root": {
+      "ctime": 1573609825,
+      "hash": "ce99a3edbce4989ee7769eb2e8d68255e239117475ac312e260a42b671d3795c75c8ac15795141456775998cc3ca7cb53abe75f1d330d0babb9107fffc5db208",
+      "hash_meta": "05d687eff91207862258deaa5d515f525f3dda9af0b70737eee7c4327ac23b59",
+      "seqno": 9296062
+    },
+    "service": {
+      "entropy": "YMccwTDvob7NaK09a/QKyCHl",
+      "hostname": "aliatiia.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.7.2"
+  },
+  "ctime": 1573609847,
+  "expire_in": 504576000,
+  "prev": "dd4f519648806fc9f9698536c186470b03633b10833e75be981f9e08f97823e4",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1TAK3Tev64pvQrdY5zy+jZd3xZfqGwWLBsw+eBvaZHMKp3BheWxvYWTESpcCB8Qg3U9RlkiAb8n5aYU2wYZHCwNjOxCDPnW+mB+eCPl4I+TEINXi9EQOHwMcG++PB0DsEtWbDEPKAVOh2GP+z89oO+txAgHCo3NpZ8RA2GXs1zoXCM9l6A/OgRB9klQIBLIFDTHv0wmoUAt9yiDmgm+afFLvi9WTRDS+IqCKxJEWebHnLFT7rwU1QIjyBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFBrgX4oV1jmKWW4Hk9BKfNR1R+Dmk3AnLw7ny4nLxWbo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aliatiia
+
+==================================================================
