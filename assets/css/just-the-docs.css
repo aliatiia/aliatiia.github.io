@@ -127,6 +127,8 @@ td, th { padding: 0; }
 
 .href { text-decoration: none; }
 
+@media (min-width: 767px) { .only-small-screens { display: none; } }
+
 * { box-sizing: border-box; }
 
 ::selection { color: #fff; background: #7253ed; }

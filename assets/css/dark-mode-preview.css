@@ -2406,4 +2406,6 @@ pre.highlight code, figure.highlight code { padding: 0; border: 0; }
 
 .href { text-decoration: none; }
 
+@media (min-width: 767px) { .only-small-screens { display: none; } }
+
 /*# sourceMappingURL=dark-mode-preview.css.map */
