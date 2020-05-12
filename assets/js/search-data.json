@@ -37,7 +37,7 @@
   },
   "7": {
     "title": "Blockchain",
-    "content": "Blockchain (currently mostly Ethereum): . The idea that you could wield software that summons disparate parties to autonomously congregate around an attractive/useful economic mechanism, in a rent-free (=max efficiency) and permissionless manner, is quite profound. . I discovered Ethereum relatively recently and after attending ETHWaterloo Nov 2019 I became interested in R&amp;D-ing auto-pilot (governless) and rent-free public financial utilities. I am working on a fee market proposal as well which may also lead to an Oracle-less purely ETH-backed stablecoin. . . Research articles General-audience articles . .",
+    "content": "Blockchain (currently mostly Ethereum): . The idea that you could wield software that summons disparate parties to autonomously congregate around an attractive/useful economic mechanism, in a rent-free (=max efficiency) and permissionless manner, is quite profound. . I discovered Ethereum relatively recently and after attending ETHWaterloo Nov 2019 I became interested in R&amp;D-ing auto-pilot (governless) and rent-free public financial utilities. I am working on a fee market proposal as well which may also lead to an Oracle-less purely ETH-backed stablecoin. . . Research articles   General-audience articles . .",
     "url": "https://aliatiia.github.io/research/blockchain/",
     "relUrl": "/research/blockchain/"
   },
