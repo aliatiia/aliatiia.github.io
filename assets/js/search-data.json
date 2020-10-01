@@ -37,7 +37,7 @@
   },
   "7": {
     "title": "Blockchain",
-    "content": "Blockchain (currently mostly Ethereum): . The idea that you could wield software that summons disparate parties to autonomously congregate around an attractive/useful economic mechanism, in a rent-free (=max efficiency) and permissionless manner, is quite profound. . I discovered Ethereum relatively recently and after attending ETHWaterloo Nov 2019 I became interested in R&amp;D-ing auto-pilot (governless) and rent-free public financial utilities. I am working on a fee market proposal as well which may also lead to an Oracle-less purely ETH-backed stablecoin. . . Ethereum research   yEarn research   General-audience articles . ♥ Thanks to everyone who support my research . .",
+    "content": "Blockchain (currently mostly Ethereum): . The idea that you could wield software that summons disparate parties to autonomously congregate around an attractive/useful economic mechanism, in a rent-free (=max efficiency) and permissionless manner, is quite profound. . I discovered Ethereum relatively recently and after attending ETHWaterloo Nov 2019 I became interested in R&amp;D-ing auto-pilot (governless) and rent-free public financial utilities. I am working on a fee market proposal as well which may also lead to an Oracle-less purely ETH-backed stablecoin. . . Ethereum research   yEarn research   General-audience articles . ♥ Thanks to everyone who supports my research . .",
     "url": "https://aliatiia.github.io/research/blockchain/",
     "relUrl": "/research/blockchain/"
   },
@@ -55,7 +55,7 @@
   },
   "10": {
     "title": "Home",
-    "content": ". My blockchain R&amp;D is primarily focused on auto-pilot self-sustaining public financial utilities particularly on Ethereum. I publish articles and threads in that domain for the general audience, covering smart contracts, DeFi and layer-2 scaling solutions like rollups. . My academic research is in a theoretical part at the intersection of computational complexity and systems biology, and in an experimental part part in the area of DNA nanotech and molecular computing. . . ♥ Thanks to everyone who support my research . .",
+    "content": ". My blockchain R&amp;D is primarily focused on auto-pilot self-sustaining public financial utilities particularly on Ethereum. I publish articles and threads in that domain for the general audience, covering smart contracts, DeFi and layer-2 scaling solutions like rollups. . My academic research was in a theoretical part at the intersection of computational complexity and systems biology, and in an experimental part part in the area of DNA nanotech and molecular computing. . . ♥ Thanks to everyone who supports my research . .",
     "url": "https://aliatiia.github.io/",
     "relUrl": "/"
   },
